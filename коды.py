@@ -55,4 +55,19 @@ n5 = (n % 100) // 10        # 5
 n6 = n % 10                 # 6
 '''
 
+# Нахождение минимума и максимума
+'''
+import random
+
+num_N = int(input('Введите кол-во арбузов: '))
+watermelon = []
+
+for i in range(num_N):
+    watermelon.append(random.randint(1, 10))
+print(watermelon)
+
+print(min(watermelon), max(watermelon))
+'''
+
+
 
