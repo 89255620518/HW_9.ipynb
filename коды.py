@@ -22,4 +22,17 @@ list_1 = [i * 2 for i in range(10) if i % 2 = 0]
 print(list_1)
 '''
 
+# Округление в большую сторону
+'''
+import math
+dayDistance = int(input('Введите расстояние за день: '))
+overallDistance = int(input('Введите общее расстояние: '))
+print(f"{math.ceil(overallDistance / dayDistance)} ")
+'''
+
+'''
+class_1 = 3
+m = class_1//2 + class_1%2
+print(m)                       # 2
+'''
 
