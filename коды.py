@@ -69,5 +69,34 @@ print(watermelon)
 print(min(watermelon), max(watermelon))
 '''
 
+# Нахождения факториала от 1 до N
+'''
+num_n = int(input('Введите число: '))
+factorial_N = 1
+
+while num_n > 0:
+    factorial_N = factorial_N * num_n
+    num_n -= 1
+print(factorial_N)
+'''
+
+# Cдвиг налево и направо
+"""
+## через срезы
+'''
+k = int(input('Введите число К: '))
+num_list = num_list[-k:] + num_list[:-k] # cдвиг справо
+num_list = num_list[k:] + num_list[:k]   # сдвиг налево
+'''
+##через ".pop"
+'''
+for _ in range(k):
+    num_list.insert(0, num_list.pop())
+'''
+"""
 
 
+# Убирает пробелы
+'''
+.strip(" ")
+'''
