@@ -96,7 +96,7 @@ for _ in range(k):
 """
 
 
-# Убирает пробелы
+# Убирает пробелы .strip
 '''
 .strip(" ")
 '''
@@ -116,5 +116,40 @@ points_ru = {1: 'АВЕИНОРСТ', 2: 'ДКЛМПУ', 3: 'БГЁЬЯ', 4: 'Й
 word = k.upper()  # переводим все буквы в верхний регистр
 '''
 
+# Сумма всех элементов с помощью функции
+'''
+def summa(spisok):
+    s = 0
+    for item in spisok:
+        s += item
+    print(s)
 
+summa([5, 8, 13, 12])
+'''
+
+# input: a a a b c a a d c d d
+# output: a a_1 a_2 b c a_3 a_4 d c_1 d_1 d_2
+'''
+spisok_list = 'a a a b c a a d c d d'
+list_1 = spisok_list.split(' ')   # - получился лист
+d = {}
+final_str = ''
+for i in list_1:   # Выделили уникальные элементы "a b c d"
+    if i in d:
+        d[i] += 1  # если есть довавляем +1
+        final_str += f'{i}_{d[i]} '
+    else:
+        d[i] = 0   # если нет, то пропускаем
+        final_str += f'{i}'
+print(final_str)
+'''
+
+# Заменили точки на пробелы 
+'''
+text = text.replace('.',' ').split()
+'''
+# почистили от всех знаков
+'''
+i.strip('.,?!\n').lower()
+'''
 
