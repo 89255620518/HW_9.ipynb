@@ -60,7 +60,20 @@ while t1.xcor()<finish and t2.xcor()<finish:
 
 
 # Создаем поле
+'''
+import pygame
 
+pygame.init()
+win = pygame.display.set_mode((500, 500)) # размеры
+pygame.display.set_caption('Крестики и нолики') # название игры
+
+run = True
+while(run):
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:   # Если пользователь закрывает окно
+            run = False
+pygame.quit()                           # То мы останавливаем программу
+'''
 
 
 
